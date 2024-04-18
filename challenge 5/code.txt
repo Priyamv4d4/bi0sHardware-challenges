@@ -1,0 +1,43 @@
+void setup() {
+  Serial.begin(9600); 
+}
+
+void loop() 
+{
+  if (Serial.available() > 0)
+  { 
+    char receivedChar = Serial.read(); 
+    if (isAlpha(receivedChar)) 
+    { 
+      
+      char decodedChar = decrypt(receivedChar, 1); 
+      Serial.print(decodedChar); 
+    }
+    
+    else {
+      Serial.print(receivedChar); 
+    }
+  }
+}
+
+
+bool isAlpha(char c)
+  
+{
+  return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');
+}
+
+
+char decrypt(char c, int shift)
+{
+  
+  if (isupper(c)) 
+  {
+    return (c - shift - 'A' + 26) % 26 + 'A'; 
+  }
+  else
+    
+  {
+    return (c - shift - 'a' + 26) % 26 + 'a'; 
+  }
+}

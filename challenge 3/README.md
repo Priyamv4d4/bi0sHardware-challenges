@@ -1,13 +1,20 @@
 ## CHALLENGE 3
 
+. The first Arduino acts as the data transmitter.
 
-.I began by connecting one Arduino(Sendor Arduino) to a potentiometer and printed the collected data to the serial monitor.
+. I Connected a potentiometer to analog pin A0 of Arduino 1.
 
-.The second Arduino( Reciever Arduino) was set to recieve the data sent by sender arduino using UART communicaton protocol.
+. Then connected the TX  pin of Arduino 1 to the RX  pin  of Arduino 2 using a jumper wire.
 
-. To display data on 16x2 LCD the necessary library #include <LiquidCrystal.h> was used.
+.Set  the second Arduino  as the receiver.
 
-. Using multiple potentiometer helped to debug different part of the code one by one.
+.Connected Arduino 2 with a 16x2 LCD display module.
+
+.Made sure that the wiring is done properly between  Arduino 2 and the LCD display.
+
+.Successfully established UART communication between Arduino 1 and Arduino 2, transmitting potentiometer data from Arduino 1 to 
+ Arduino 2.
+ 
 
 
 RESOURCES REFERRED:

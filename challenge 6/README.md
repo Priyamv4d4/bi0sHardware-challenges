@@ -32,4 +32,4 @@ https://youtu.be/cXpeTxC3_A4?si=FoqQmN4Fn826MIpq
 
 https://docs.arduino.cc/learn/electronics/lcd-displays
 
-#### PROJECT LINK : https://www.tinkercad.com/things/8zF7CZ5GqCb-challenge-6
+#### PROJECT LINK : [https://www.tinkercad.com/things/8zF7CZ5GqCb-challenge-6](https://www.tinkercad.com/things/8zF7CZ5GqCb-challenge-6?sharecode=ZGKF2XeTxIx_arl4i2u_vvEiqIdzG-OOGPncpBC6RtY)

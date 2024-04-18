@@ -2,12 +2,29 @@
 
 
 
-. Studied how to read datasheets  of the 16x2 LCD display
+.First learned what Caesar Cipher algorithm is.
 
-. Based on the datasheet information, I mapped each control signal to a dedicated switch.
+.Initializes serial communication at a baud rate of 9600 bits per second.
+
+.Check if there is incoming data available on the serial port.
+
+.Serial monitor reads the incoming character.
+
+.If the character is an alphabet, it decrypts it using the decrypt function and prints the decoded character to the serial port.
+
+.If the character is not an alphabet, it prints it directly to the serial port.
+
+.Checks if a given character is an alphabet (either uppercase or lowercase).
+
+.Returns true if the character is an alphabet, otherwise false.
+
+.Decrypts an input character using a Caesar Cipher with a specified shift value.
+
+.Handles both uppercase and lowercase characters separately.
+
+.Returns the decrypted character.
  
-. Got an idea about the significance of different swiches in tinkercad and its use..
-
+ 
 
 RESOURCES REFERRED:
 

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "author": "Priyamvada M",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 115.8, "left": 9, "attrs": {} },
+    { "type": "wokwi-membrane-keypad", "id": "keypad1", "top": -251.6, "left": 92, "attrs": {} },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": -69.2,
+      "left": -105.6,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 188.8,
+      "left": 370.4,
+      "attrs": { "pins": "i2c" }
+    }
+  ],
+  "connections": [
+    [ "keypad1:R1", "uno:7", "green", [ "v0" ] ],
+    [ "uno:6", "keypad1:R2", "green", [ "v-38.4", "h-15.5" ] ],
+    [ "uno:0", "keypad1:C4", "green", [ "v0" ] ],
+    [ "uno:1", "keypad1:C3", "green", [ "v0" ] ],
+    [ "keypad1:C2", "uno:2", "green", [ "v0" ] ],
+    [ "uno:3", "keypad1:C1", "green", [ "v0" ] ],
+    [ "keypad1:R4", "uno:4", "green", [ "v0" ] ],
+    [ "uno:5", "keypad1:R3", "green", [ "v0" ] ],
+    [ "servo1:PWM", "uno:11", "violet", [ "v10.6", "h165.2" ] ],
+    [ "servo1:GND", "uno:GND.2", "black", [ "v269.8", "h213" ] ],
+    [ "servo1:V+", "uno:5V", "red", [ "v260.2", "h193.9" ] ],
+    [ "lcd1:GND", "uno:GND.3", "black", [ "h-48", "v163.2", "h-144", "v-9.6" ] ],
+    [ "lcd1:VCC", "uno:5V", "red", [ "h-38.4", "v172.9", "h-172.8" ] ],
+    [ "lcd1:SDA", "uno:A4", "yellow", [ "h-67.2", "v125", "h-48" ] ],
+    [ "lcd1:SCL", "uno:A5", "orange", [ "h-76.8", "v96.3", "h-28.8" ] ]
+  ],
+  "dependencies": {}
+}
